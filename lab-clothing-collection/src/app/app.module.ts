@@ -18,6 +18,9 @@ import { EdicaoColecaoComponent } from './pages/edicao-colecao/edicao-colecao.co
 import { ListagemModelosComponent } from './pages/modelos/listagem-modelos/listagem-modelos.component';
 import { CadastroModelosComponent } from './pages/modelos/cadastro-modelos/cadastro-modelos.component';
 import { EdicaoModelosComponent } from './pages/modelos/edicao-modelos/edicao-modelos.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SubmenuComponent } from './components/submenu/submenu.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { EdicaoModelosComponent } from './pages/modelos/edicao-modelos/edicao-mo
     EdicaoColecaoComponent,
     ListagemModelosComponent,
     CadastroModelosComponent,
-    EdicaoModelosComponent
+    EdicaoModelosComponent,
+    HeaderComponent,
+    SidebarComponent,
+    SubmenuComponent
   ],
   imports: [
     BrowserModule,

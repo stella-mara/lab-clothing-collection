@@ -1,0 +1,42 @@
+div#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 51px 40px;
+  position: relative;
+  width: 320px;
+  height: 880px;
+  border-right: 2px solid #f0f0f0;
+}
+
+.div-branca {
+  display: block;
+  width: 260px;
+  height: 60px;
+  background-color: white;
+}
+
+span {
+  color: #b4b6c1;
+  text-align: right;
+  padding-right: 200px;
+}
+
+.text-grey {
+  color: #b4b6c1;
+}
+
+.btn-group-vertical{
+display: flex;
+flex-direction: column;
+padding: 0px 20px;
+gap: 28px;
+top: 5px;
+width: 300px;
+right: 30px;
+flex: none;
+align-self: stretch;
+float: right;
+}
+
+

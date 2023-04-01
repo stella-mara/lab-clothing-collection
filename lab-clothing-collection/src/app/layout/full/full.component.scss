@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  padding: 0 !important;
+}
+
+.header{
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 6 / 2;
+}
+
+.content {
+  grid-area: 2 / 2 / 6 / 6;
+}

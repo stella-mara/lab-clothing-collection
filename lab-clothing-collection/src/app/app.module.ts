@@ -18,7 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContentComponent } from './layout/content/content.component';
 import { FullComponent } from './layout/full/full.component';
-import { SubmenuComponent } from './layout/submenu/submenu.component';
+import { SubmenuComponent } from './components/submenu/submenu.component';
 
 @NgModule({
   declarations: [

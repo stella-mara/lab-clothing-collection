@@ -1,33 +1,19 @@
-.container {
-  display: grid;
-  grid-template-columns:320px 1fr;
-  grid-template-rows: 120px repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
 
-.div1{
-  grid-area: 1 / 1 / 6 / 2;
- }
-
-.div2 {
-  grid-area: 1 / 2 / 2 / 6;
+.header-app {
   top: 0;
-  position: fixed;
-  width: 1180px;
+  position: absolute;
+  width: 75.5vw;
   height: 90px;
   left: 318px;
   border: 2px solid #f0f0f0;
 }
 
-.div3 {
-  grid-area: 2 / 2 / 6 / 3;
-}
-
 img#sino {
   position: absolute;
-  left: 72%;
-  right: 12.5%;
+  left: 80%;
+  right: 75%;
   top: 35%;
   bottom: 8.33%;
 }
+
+

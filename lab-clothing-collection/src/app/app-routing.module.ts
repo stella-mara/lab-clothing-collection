@@ -6,6 +6,8 @@ import { ContentComponent } from './layout/content/content.component';
 import { FullComponent } from './layout/full/full.component';
 import { EsqueciSenhaComponent } from './pages/esqueci-senha/esqueci-senha.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
+import { HomeComponent } from './pages/dashboard/home/home.component';
 
 const routes: Routes = [
 
@@ -22,7 +24,12 @@ const routes: Routes = [
       {
         path: 'header',
         component: HeaderComponent,
-      }
+      },
+
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
 
      ]
    },
@@ -45,6 +52,16 @@ const routes: Routes = [
         path: 'esquecisenha',
         component: EsqueciSenhaComponent,
       },
+
+      {
+        path: 'cadastro',
+        component: CadastroUsuarioComponent,
+      },
+
+      {
+        path: 'cadastro',
+        component: CadastroUsuarioComponent,
+      }
 
     ]
   }

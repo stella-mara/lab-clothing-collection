@@ -1,1 +1,41 @@
-<p>home works!</p>
+<section class="box-dashboard d-flex justify-content-end">
+  <h4>Dashboard</h4>
+  <div>
+    <app-card1></app-card1>
+  </div>
+  <!--<div>
+    <app-card2></app-card2>
+  </div>!-->
+
+  <div class="card border-0 container-fluid">
+    <div class="card-header bg-transparent border-0">
+      <h6>Maiores Orçamentos</h6>
+    </div>
+    <div class="table-responsive">
+      <div class="card-body">
+        <table id="tabela-home" class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Coleção</th>
+                <th scope="col">Responsável</th>
+                <th scope="col">Modelos</th>
+                <th scope="col">Orçamento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-md-4">...</td>
+                <td class="col-md-4">...</td>
+                <td class="col-md-4">...</td>
+                <td class="col-md-4">...</td>
+              </tr>
+              <tr>
+                <td colspan="4">Não foram encontrados mais registros.</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

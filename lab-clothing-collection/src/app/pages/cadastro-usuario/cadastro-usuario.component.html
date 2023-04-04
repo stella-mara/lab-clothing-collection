@@ -1,1 +1,55 @@
-<p>cadastro-usuario works!</p>
+ <section class="box-form">
+    <img id="logo" src="../../../assets/audaces-logo.svg" alt="logo">
+    <form id="form-cadastro" class="row g-xs needs-validation" novalidate>
+      <h4>Sign Up</h4>
+      <p>Insira seus dados para criar uma conta</p>
+      <div class="col-12">
+        <label for="validationCustom01" class="form-label"></label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required placeholder="Nome">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="validationCustom02" class="form-label"></label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required placeholder="Empresa">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+        <div class="col-12">
+          <label for="validationCustom03" class="form-label"></label>
+          <input type="text" class="form-control" id="validationCustom03" value="" required placeholder="CNPJ">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="validationCustom04" class="form-label"></label>
+          <input type="email" class="form-control" id="validationCustom04" value="" required placeholder="Informe seu e-mail">
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 pe-0">
+            <label for="validationCustom05" class="form-label"></label>
+            <input id="password" type="password" class="form-control" id="validationCustom05" value="" required placeholder="Senha">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-6 pe-0">
+            <label for="validationCustom06" class="form-label"></label>
+            <input id="confirm-password" type="password" class="form-control" id="validationCustom06" value="" required placeholder="Confirmar senha">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+      <div class="d-flex justify-content-center col-12">
+        <button class="btn btn-primary mb-3" type="submit">Criar Conta</button>
+      </div>
+    </form>
+  </section>
+<router-outlet></router-outlet>

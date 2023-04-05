@@ -1,4 +1,4 @@
-div.card {
+div#card {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -13,7 +13,7 @@ background: #FFFFFF;
 border-radius: 20px;
 }
 
-h6 {
+h6#title-card {
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;

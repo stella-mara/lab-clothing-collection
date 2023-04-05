@@ -8,6 +8,7 @@ import { EsqueciSenhaComponent } from './pages/esqueci-senha/esqueci-senha.compo
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { HomeComponent } from './pages/dashboard/home/home.component';
+import { ListagemColecaoComponent } from './pages/colecao/listagem-colecao/listagem-colecao.component';
 
 const routes: Routes = [
 
@@ -15,22 +16,15 @@ const routes: Routes = [
      path: '',
      component: FullComponent,
      children: [
-
-      {
-        path: 'sidebar',
-        component: SidebarComponent
-      },
-
-      {
-        path: 'header',
-        component: HeaderComponent,
-      },
-
       {
         path: 'home',
         component: HomeComponent,
       },
 
+      {
+        path: 'colecao',
+        component: ListagemColecaoComponent,
+      },
      ]
    },
 
@@ -57,12 +51,6 @@ const routes: Routes = [
         path: 'cadastro',
         component: CadastroUsuarioComponent,
       },
-
-      {
-        path: 'cadastro',
-        component: CadastroUsuarioComponent,
-      }
-
     ]
   }
 ];

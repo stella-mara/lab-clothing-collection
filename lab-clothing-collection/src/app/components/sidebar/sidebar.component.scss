@@ -3,7 +3,8 @@ div#sidebar {
   flex-direction: column;
   gap: 40px;
   padding: 51px 40px;
-  position: relative;
+  position: absolute;
+  top: 2px;
   width: 320px;
   height: 100%;
   border-right: 2px solid #f0f0f0;

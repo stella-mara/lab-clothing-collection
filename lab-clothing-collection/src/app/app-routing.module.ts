@@ -11,6 +11,8 @@ import { ListagemColecaoComponent } from './pages/colecao/listagem-colecao/lista
 import { ListagemModelosComponent } from './pages/modelos/listagem-modelos/listagem-modelos.component';
 import { CadastroColecaoComponent } from './pages/colecao/cadastro-colecao/cadastro-colecao.component';
 import { CadastroModelosComponent } from './pages/modelos/cadastro-modelos/cadastro-modelos.component';
+import { EdicaoColecaoComponent } from './pages/colecao/edicao-colecao/edicao-colecao.component';
+import { EdicaoModelosComponent } from './pages/modelos/edicao-modelos/edicao-modelos.component';
 
 const routes: Routes = [
 
@@ -39,8 +41,18 @@ const routes: Routes = [
       },
 
       {
+        path: 'editarcolecao',
+        component: EdicaoColecaoComponent,
+      },
+
+      {
         path: 'criarmodelos',
         component: CadastroModelosComponent,
+      },
+
+      {
+        path: 'editarmodelos',
+        component: EdicaoModelosComponent,
       },
      ]
    },
@@ -49,11 +61,11 @@ const routes: Routes = [
     path: '',
     component: ContentComponent,
     children: [
-     //{
-     //   path: '',
-     //   redirectTo: 'login',
-     //   pathMatch: 'full',
-     // },
+     {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full',
+      },
       {
         path: 'login',
         component: LoginComponent,

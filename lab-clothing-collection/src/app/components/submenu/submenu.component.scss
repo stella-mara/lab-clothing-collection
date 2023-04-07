@@ -6,6 +6,10 @@ div#submenu {
   top: 15px;
 }
 
+.dropdown-menu {
+  display: none !important;
+}
+
 ul.dropdown-menu {
   display: flex;
   flex-direction: column;

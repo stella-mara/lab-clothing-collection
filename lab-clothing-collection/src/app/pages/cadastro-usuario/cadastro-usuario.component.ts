@@ -1,10 +1,47 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Usuarios } from 'src/app/interfaces/usuarios';
+import { UsuariosService } from 'src/app/services/usuarios.service';
 
 @Component({
   selector: 'app-cadastro-usuario',
   templateUrl: './cadastro-usuario.component.html',
   styleUrls: ['./cadastro-usuario.component.scss']
 })
-export class CadastroUsuarioComponent {
+export class CadastroUsuarioComponent implements OnInit {
 
+formUsuario!: FormGroup;
+usuarios: Usuarios[] | undefined = [];
+
+constructor ( 
+  private UsuariosService: UsuariosService,
+  private router: Router,
+  private fb: FormBuilder
+
+) {}
+
+ngOnInit(): void {
+  this.formUsuario = this.fb.group({
+    nome: ['', [Validators.required]],
+    empresa: ['', [Validators.required]],
+    cnpj: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.minLength(8)]],
+    senha: ['', [Validators.required, Validators.minLength(8)]]
+  })
+
+  alert('Conta Criada')
+  //this.listarUsuarios();
+}
+
+  async listarUsuarios() {
+    this.usuarios = await this.UsuariosService.getUsuarios().toPromise();
+  }
+
+  async criarUsuario() {
+  const usuario: Usuarios = this.formUsuario.value;
+
+  await this.UsuariosService.criarUsuario(usuario).toPromise()
+  this.listarUsuarios()
+}
 }

@@ -1,0 +1,130 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "empresa": "ABC Moda",
+      "cnpj": "123456789",
+      "email": "joao.silva@abcmoda.com",
+      "senha": "senha123"
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas",
+      "cnpj": "111111111111",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 2
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas",
+      "cnpj": "111111111111",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 3
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 4
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 5
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 6
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 7
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 8
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 9
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 10
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 11
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 12
+    },
+    {
+      "nome": "Stella Mara Wendt",
+      "empresa": "Stella Roupas LTDA",
+      "cnpj": "123456789",
+      "email": "stellamarawendt@gmail.com",
+      "senha": "123456",
+      "id": 13
+    }
+  ],
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Vestido Floral",
+      "tipo": "Vestido",
+      "colecao": 1,
+      "responsavel": "João Silva",
+      "bordado": false,
+      "estampa": true
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção Primavera/Verão",
+      "responsavel": "João Silva",
+      "temporada": "Primavera/Verão",
+      "marca": "ABC Moda",
+      "orcamento": 5000,
+      "ano": 2023
+    }
+  ]
+}

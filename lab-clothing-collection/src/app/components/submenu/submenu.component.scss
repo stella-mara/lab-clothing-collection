@@ -7,11 +7,11 @@ div#submenu {
 }
 
 .dropdown-menu {
-  display: none !important;
+  display: none;
 }
 
 ul.dropdown-menu {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 14px;
@@ -35,5 +35,9 @@ hr#line {
 .d-none span{
   color: #E6E7EB;
   left: 80px;
+}
+
+.show {
+  display: flex !important;
 }
 

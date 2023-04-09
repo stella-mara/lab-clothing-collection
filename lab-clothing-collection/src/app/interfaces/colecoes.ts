@@ -4,6 +4,6 @@ export interface Colecoes {
   responsavel: string;
   estacao: string;
   marca: string;
-  modelos: string;
   orcamento: string;
+  lancamento: string;
 }

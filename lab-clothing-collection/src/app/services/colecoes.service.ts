@@ -24,7 +24,7 @@ export class ColecoesService {
     return this.http.post<Colecoes>(`${this.baseUrl}/colecoes`, colecao);
   }
 
-  atualizarUsuario(colecao: Colecoes): Observable<any> {
+  atualizarColecao(colecao: Colecoes): Observable<any> {
     return this.http.put<any>(`${this.baseUrl}/colecoes/${colecao.id}`, colecao);
   }
 

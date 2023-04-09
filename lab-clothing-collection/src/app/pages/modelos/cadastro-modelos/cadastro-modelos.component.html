@@ -2,21 +2,101 @@
   <div class="d-flex justify-content-start">
       <h4>Modelos</h4>
   </div>
-  <div id="" class="">
-
-    <!--<div class="button-container d-flex justify-content-end">
-      <button type="button" class="modelos btn btn-primary">Criar Coleção</button>
-    </div>!-->
-
-  <div id="cadastro-modelos" class="">
-      <div id="form-cadastro-modelos" class="">
-       
-
+  <div id="form-cadastro-modelos" class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center align-items-center">
+      <form [formGroup]="formModelo" (ngSubmit)="criarModelo()" class="lista-form-modelos">
+        <div class="row gx-5 d-flex justify-content-between">
+          <div class="col-md-6">
+            <div id="input-modelos" class="form-group mb-4">
+              <label for="campo1"></label>
+              <input
+              name="nome" formControlName="nome"
+                type="text"
+                class="form-control"
+                id="campo1"
+                required
+                placeholder="Nome dao Modelo"
+              />
+            </div>
+            <div id="input-modelos" class="form-group mb-4">
+              <label for="campo2"></label>
+              <select class="form-select" id="validationCustom02" required>
+                <option selected disabled value="">Selecionar Coleção</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div id="input-modelos" class="form-group mb-4">
+              <fieldset class="row mb-3">
+                <legend class="col-form-label">Possui bordado?</legend>
+                <div class="row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bordado" formControlName="bordado"  id="bordado-sim" value="sim" checked>
+                    <label class="form-check-label" for="bordado">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="bordado"  formControlName="bordado" id="bordado-nao" value="nao">
+                    <label class="form-check-label" for="bordado">
+                      Não
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="input-modelos" class="form-group mb-4">
+              <label for="campo4"></label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Tipo do Modelo</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div id="input-modelos" class="form-group mb-4">
+              <label for="campo5"></label>
+              <input
+              name="responsavel" formControlName="responsavel"
+                type="text"
+                class="form-control"
+                id="campo5"
+                required
+                placeholder="Responsável pelo modelo"
+              />
+            </div>
+            <div id="input-modelos" class="form-group mb-4">
+              <fieldset class="row mb-3">
+                <legend class="col-form-label">Possui estampa?</legend>
+                <div class="row">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estampa" formControlName="estampa"   id="estampa-sim" value="sim" checked>
+                    <label class="form-check-label" for="estampa">
+                      Sim
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estampa" formControlName="estampa" id="estamoa-nao" value="nao">
+                    <label class="form-check-label" for="estampa">
+                      Não
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div id="button-modelos" class="d-flex justify-content-between">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-secondary disabled">
+            Cancelar
+          </button>
+        </div>
+        <div class="col-md-4"><button type="submit" class="btn btn-primary">Salvar</button></div>
       </div>
     </div>
-      <div id="imagem">
-
-      </div>
 
   </div>
 </section>

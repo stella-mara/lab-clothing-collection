@@ -2,22 +2,43 @@ section.box-cadastro-modelos {
   background-color:  #F2F5FF;
   display: flex;
   flex-direction: column;
-  padding: 2px 30px;
+  padding: 2px 20px;
   margin: 0 auto;
-  gap: 35px;
   position: absolute;
   width: 1031px;
-  height: 87%;
+  height: 100%;
   top: 85px;
   left: 318px;
 }
 
-button.modelos {
-width: 220px;
-height: 40px;
+::placeholder {
+  color: #B4B6C1;
+  font-size: 14px;
+}
 
-background: #0073CF;
-border-radius: 6px;
+select {
+  color: #B4B6C1;
+  font-size: 14px;
+}
+
+option {
+  color: #B4B6C1;
+  font-size: 14px;
+}
+
+legend {
+  color: #B4B6C1;
+  font-size: 14px;
+}
+
+label {
+  color: #B4B6C1;
+  font-size: 14px;
+}
+
+button.btn {
+width: 220px;
+height: 35px;
 }
 
 h4 {
@@ -27,19 +48,41 @@ line-height: 34px;
 }
 
 div#form-cadastro-modelos {
-  width: 95%;
-  height: 460px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 560px;
   background-color: #FFFFFF;
   border-radius: 9px;
-  padding: 10px;
-  gap: 10px;
+  padding: 5px 30px;
 }
 
-div#cadastro-modelos {
-  bottom: 10px;
+div#header-modelos {
+padding: 10px;
 }
 
-::placeholder {
-  color: #B4B6C1;
-  font-size: 14px;
+
+img#img-criar-editar {
+  width: 290px;
+  height: 230px;
+  position: absolute;
+  top:280px;
+}
+
+
+div#input-modelos {
+  padding: 13px 15px;
+  width: 410px;
+  height: 43px;
+}
+
+form.lista-form-modelos {
+  position: absolute;
+  top: 60px;
+}
+
+div#button-modelos {
+  position: absolute;
+  bottom: 105px;
+  right: 105px;
 }

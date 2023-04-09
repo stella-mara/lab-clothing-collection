@@ -36,7 +36,16 @@
       "estacao": "Primavera/Verão",
       "marca": "",
       "orcamento": "R$ 5000,00",
-      "lancamento":""
+      "lancamento": ""
+    },
+    {
+      "nome": "Coleçao Outono/Inverno",
+      "responsavel": "Stella Mara Wendt",
+      "estacao": "Outono/Inverno",
+      "marca": "ABC",
+      "orcamento": "2500",
+      "lancamento": "2023",
+      "id": 2
     }
   ]
 }

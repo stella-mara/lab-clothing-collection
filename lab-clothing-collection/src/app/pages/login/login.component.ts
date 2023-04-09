@@ -27,22 +27,22 @@ usuarios: any | Usuarios[] = [];
 
   onSubmit() {
     if (this.formLogin.valid) {
-      const credenciais = this.formLogin.value
-      const usuario = this.usuarios.find((usuario: { email: any; senha: any; }) => usuario.email === credenciais.email && usuario.senha === credenciais.senha)
+      const credenciais = this.formLogin.value;
+      const usuario = this.usuarios.find((usuario: { email: any; senha: any; }) =>
+        usuario.email === credenciais.email && usuario.senha === credenciais.password)
       if (usuario) {
         this.router.navigateByUrl('/home')
       } else {
-       alert("Email e/ou senha incorreto")
-       return;
+        alert("Email e/ou senha incorreto")
       }
     } else {
       alert('Login inválido')
-      return;
     }
-
   }
 
   }
+
+  
 
 
 

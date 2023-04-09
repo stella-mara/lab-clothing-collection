@@ -32,6 +32,10 @@ ngOnInit(): void {
 }
 
   async criarUsuario() {
+    if (!this.formUsuario.valid) {
+      alert("Formulario inválido")
+      return;
+   }
   const usuario: Usuarios = this.formUsuario.value;
 
   await this.UsuariosService.criarUsuario(usuario).toPromise()

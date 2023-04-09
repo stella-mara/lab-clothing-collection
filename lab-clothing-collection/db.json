@@ -13,25 +13,10 @@
       "empresa": "Stella Roupas",
       "cnpj": "111111111111",
       "email": "stellamarawendt@gmail.com",
-      "senha": "123456",
+      "senha": "12345678",
       "id": 2
-    },
-    {
-      "nome": "Stella Mara Wendt",
-      "empresa": "Stella Roupas LTDA",
-      "cnpj": "111111111111",
-      "email": "stellamarawendt@gmail.com",
-      "senha": "123456",
-      "id": 3
-    },
-    {
-      "nome": "",
-      "empresa": "",
-      "cnpj": "",
-      "email": "",
-      "senha": "",
-      "id": 4
     }
+
   ],
   "modelos": [
     {

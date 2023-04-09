@@ -5,4 +5,5 @@ export interface Usuarios {
   cnpj: string;
   email: string;
   senha: string;
+  confirmarSenha?: string;
 }

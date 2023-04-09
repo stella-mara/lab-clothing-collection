@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listagem-colecao',
@@ -6,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listagem-colecao.component.scss']
 })
 export class ListagemColecaoComponent implements OnInit{
-data: any
+  router: any;
+
+  contructor () {}
 
   ngOnInit(): void {
-    fetch('http://localhost:3000/colecoes').then(response => response.json()).then((colecoesData) => {
-      this.data = colecoesData
-    });
+
   }
 
 }

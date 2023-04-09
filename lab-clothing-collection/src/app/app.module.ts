@@ -19,6 +19,9 @@ import { SubmenuComponent } from './components/submenu/submenu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { ListagemColecaoComponent } from './pages/colecao/listagem-colecao/listagem-colecao.component';
+import { CadastroColecaoComponent } from './pages/colecao/cadastro-colecao/cadastro-colecao.component';
+import { EdicaoColecaoComponent } from './pages/colecao/edicao-colecao/edicao-colecao.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { CardsComponent } from './components/cards/cards.component';
     ListagemModelosComponent,
     CadastroModelosComponent,
     EdicaoModelosComponent,
+    ListagemColecaoComponent,
+    CadastroColecaoComponent,
+    EdicaoColecaoComponent,
     HeaderComponent,
     SidebarComponent,
     ContentComponent,

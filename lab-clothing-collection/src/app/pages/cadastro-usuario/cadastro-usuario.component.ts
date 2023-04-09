@@ -14,11 +14,10 @@ export class CadastroUsuarioComponent implements OnInit {
 formUsuario!: FormGroup;
 usuarios: Usuarios[] | undefined = [];
 
-constructor ( 
+constructor (
   private UsuariosService: UsuariosService,
   private router: Router,
   private fb: FormBuilder
-
 ) {}
 
 ngOnInit(): void {
@@ -26,22 +25,17 @@ ngOnInit(): void {
     nome: ['', [Validators.required]],
     empresa: ['', [Validators.required]],
     cnpj: ['', [Validators.required]],
-    email: ['', [Validators.required, Validators.minLength(8)]],
+    email: ['', [Validators.required, Validators.email]],
     senha: ['', [Validators.required, Validators.minLength(8)]]
   })
 
-  alert('Conta Criada')
-  //this.listarUsuarios();
 }
-
-  async listarUsuarios() {
-    this.usuarios = await this.UsuariosService.getUsuarios().toPromise();
-  }
 
   async criarUsuario() {
   const usuario: Usuarios = this.formUsuario.value;
 
   await this.UsuariosService.criarUsuario(usuario).toPromise()
-  this.listarUsuarios()
+
+  this.router.navigateByUrl('/login')
 }
 }

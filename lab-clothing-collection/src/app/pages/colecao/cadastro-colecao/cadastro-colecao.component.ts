@@ -39,6 +39,5 @@ const colecao: Colecoes = this.formColecao.value;
 await this.ColecoesService.criarColecao(colecao).toPromise()
 
 this.router.navigateByUrl('/colecao')
-
 }
 }

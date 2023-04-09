@@ -1,10 +1,10 @@
 <div id="submenu" class="dropdown pb-4">
   <a
     href="#"
-    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle show" (click)="toggleDropdown()"
     id="dropdownUser1"
     data-bs-toggle="dropdown"
-    aria-expanded="false"
+    aria-expanded="true"
   >
     <img
       src="../../../assets/Rectangle 64.png"
@@ -16,7 +16,7 @@
       <img src="../../../assets/Stroke 1.png" alt="seta" />
     </span>
   </a>
-  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser1">
+  <ul class="dropdown-menu text-small shadow" [ngClass]="{'show': dropdownAberto}" aria-labelledby="dropdownUser1" data-bs-toggle="dropdown" popper-placement="bottom-end">
     <li>
       <a class="dropdown-item" href="#">
         <img src="../../../assets/conta.png" alt="conta" />

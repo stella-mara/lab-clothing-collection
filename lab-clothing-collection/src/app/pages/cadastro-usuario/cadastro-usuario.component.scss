@@ -22,13 +22,13 @@ section.box-form {
 form#form-cadastro {
   background-color: #FFF;
   opacity: 0.8;
-  padding: 15px 30px;
-  gap:20px;
+  padding: 10px;
+  gap: 0px;
   border-radius: 8px;
   width:420px;
   height: 680px;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 67px;
 
 }
 
@@ -80,11 +80,15 @@ button {
 width: 370px;;
 height: 39px;
 position: absolute;
-top: 520px;
+top: 562px;
 }
 
 div.header-usuario {
   margin: 0 auto;
   padding: 2px;
+}
+
+div.input {
+  margin-top: -20px;
 }
 

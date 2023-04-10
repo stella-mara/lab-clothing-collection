@@ -1,16 +1,21 @@
 <section class="box-cadastro-modelos">
   <div class="d-flex justify-content-start">
-      <h4>Modelos</h4>
+    <h4>Modelos</h4>
   </div>
   <div id="form-cadastro-modelos" class="d-flex justify-content-center">
     <div class="d-flex justify-content-center align-items-center">
-      <form [formGroup]="formModelo" (ngSubmit)="criarModelo()" class="lista-form-modelos">
+      <form
+        [formGroup]="formModelo"
+        (ngSubmit)="criarModelo()"
+        class="lista-form-modelos"
+      >
         <div class="row gx-5 d-flex justify-content-between">
           <div class="col-md-6">
             <div id="input-modelos" class="form-group mb-4">
               <label for="campo1"></label>
               <input
-              name="nome" formControlName="nome"
+                name="nome"
+                formControlName="nome"
                 type="text"
                 class="form-control"
                 id="campo1"
@@ -30,16 +35,27 @@
                 <legend class="col-form-label">Possui bordado?</legend>
                 <div class="row">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="bordado" formControlName="bordado"  id="bordado-sim" value="sim" checked>
-                    <label class="form-check-label" for="bordado">
-                      Sim
-                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bordado"
+                      formControlName="bordado"
+                      id="bordado-sim"
+                      value="sim"
+                      checked
+                    />
+                    <label class="form-check-label" for="bordado"> Sim </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="bordado"  formControlName="bordado" id="bordado-nao" value="nao">
-                    <label class="form-check-label" for="bordado">
-                      Não
-                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="bordado"
+                      formControlName="bordado"
+                      id="bordado-nao"
+                      value="nao"
+                    />
+                    <label class="form-check-label" for="bordado"> Não </label>
                   </div>
                 </div>
               </fieldset>
@@ -64,7 +80,8 @@
             <div id="input-modelos" class="form-group mb-4">
               <label for="campo5"></label>
               <input
-              name="responsavel" formControlName="responsavel"
+                name="responsavel"
+                formControlName="responsavel"
                 type="text"
                 class="form-control"
                 id="campo5"
@@ -77,16 +94,27 @@
                 <legend class="col-form-label">Possui estampa?</legend>
                 <div class="row">
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="estampa" formControlName="estampa"   id="estampa-sim" value="sim" checked>
-                    <label class="form-check-label" for="estampa">
-                      Sim
-                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="estampa"
+                      formControlName="estampa"
+                      id="estampa-sim"
+                      value="sim"
+                      checked
+                    />
+                    <label class="form-check-label" for="estampa"> Sim </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="estampa" formControlName="estampa" id="estamoa-nao" value="nao">
-                    <label class="form-check-label" for="estampa">
-                      Não
-                    </label>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="estampa"
+                      formControlName="estampa"
+                      id="estamoa-nao"
+                      value="nao"
+                    />
+                    <label class="form-check-label" for="estampa"> Não </label>
                   </div>
                 </div>
               </fieldset>
@@ -102,9 +130,10 @@
             Cancelar
           </button>
         </div>
-        <div class="col-md-4"><button type="submit" class="btn btn-primary">Salvar</button></div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
       </div>
     </div>
-
   </div>
 </section>

@@ -15,15 +15,15 @@ import { EdicaoColecaoComponent } from './pages/colecao/edicao-colecao/edicao-co
 import { EdicaoModelosComponent } from './pages/modelos/edicao-modelos/edicao-modelos.component';
 
 const routes: Routes = [
-     {
-        path: '',
-        redirectTo: 'login',
-        pathMatch: 'full',
-      },
-    {
-     path: '',
-     component: FullComponent,
-     children: [
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
+    component: FullComponent,
+    children: [
       {
         path: 'home',
         component: HomeComponent,
@@ -58,8 +58,8 @@ const routes: Routes = [
         path: 'editarmodelos',
         component: EdicaoModelosComponent,
       },
-     ]
-   },
+    ],
+  },
 
   {
     path: '',
@@ -79,12 +79,12 @@ const routes: Routes = [
         path: 'cadastro',
         component: CadastroUsuarioComponent,
       },
-    ]
-  }
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

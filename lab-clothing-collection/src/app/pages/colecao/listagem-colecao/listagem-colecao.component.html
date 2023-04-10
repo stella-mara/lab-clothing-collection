@@ -1,40 +1,49 @@
-<section class="box-lista-colecao ">
+<section class="box-lista-colecao">
   <div id="header-colecao" class="d-flex justify-content-between">
     <div class="d-flex justify-content-start">
       <h4>Coleção</h4>
     </div>
     <div class="button-container d-flex justify-content-end">
-      <button routerLink="/criarcolecao" type="button" class="colecao btn btn-primary">Criar Coleção</button>
+      <button
+        routerLink="/criarcolecao"
+        type="button"
+        class="colecao btn btn-primary"
+      >
+        Criar Coleção
+      </button>
     </div>
   </div>
   <div id="card-lista-colecao" class="card border-0 container-fluid">
     <div class="table-responsive">
       <div id="lista-colecao-card-body" class="card-body">
         <table id="tabela-colecao" class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Coleção</th>
-                <th scope="col">Responsável</th>
-                <th scope="col">Estação-Lançamento</th>
-                <th scope="col">Modelos</th>
-                <th scope="col">Orçamento</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let colecao of colecoes" [routerLink]="['/editarcolecao']">
-                <td class="col-md-2">{{ colecao.id }}</td>
-                <td class="col-md-3">{{ colecao.responsavel}}</td>
-                <td class="col-md-4">{{ colecao.estacao }}</td>
-                <td class="col-md-2"></td>
-                <td class="col-md-3">{{ colecao.orcamento }}</td>
-             <!-- </tr>
+          <thead>
+            <tr>
+              <th scope="col">Coleção</th>
+              <th scope="col">Responsável</th>
+              <th scope="col">Estação-Lançamento</th>
+              <th scope="col">Modelos</th>
+              <th scope="col">Orçamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let colecao of colecoes"
+              [routerLink]="['/editarcolecao']"
+            >
+              <td class="col-md-2">{{ colecao.id }}</td>
+              <td class="col-md-3">{{ colecao.responsavel }}</td>
+              <td class="col-md-4">{{ colecao.estacao }}</td>
+              <td class="col-md-2"></td>
+              <td class="col-md-3">{{ colecao.orcamento }}</td>
+              <!-- </tr>
               <tr *ngIf="colecoes.length === 0">
                 <td colspan="6">Não foram encontrados mais registros.</td>
               </tr> !-->
-            </tbody>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
   </div>
 </section>
-

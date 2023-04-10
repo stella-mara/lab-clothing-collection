@@ -4,16 +4,16 @@ import { Observable } from 'rxjs';
 import { Modelos } from '../interfaces/modelos';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ModelosService {
   criarModelo(modelo: Modelos) {
     throw new Error('Method not implemented.');
   }
 
-  private baseUrl = 'http://localhost:3000'
+  private baseUrl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getModelos(): Observable<Modelos[]> {
     return this.http.get<Modelos[]>(`${this.baseUrl}/modelos`);

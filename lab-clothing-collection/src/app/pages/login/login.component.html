@@ -1,22 +1,39 @@
-
-  <section id="login">
-    <img id="logo" src="../../../assets/audaces-logo.svg" alt="logo" />
-    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="form-login">
-      <h4>Sign In</h4>
-      <p>Insira suas credenciais para acessar a conta</p>
-      <div class="">
-        <label for="email"></label>
-        <input type="email"  id="email" name="email" formControlName="email"   placeholder="Informe seu e-mail" />
-        <br />
-        <label for="password"></label>
-        <input type="password"  id="password" name="senha" formControlName="password" placeholder="Informe sua senha" />
-        <br /><br />
-        <button type="submit" >Entrar</button>
-      </div>
-    </form>
-    <br />
-    <div class="operacoes">
-      <p>Esqueceu sua senha? <a href="#" routerLink="/esquecisenha">Redefinir senha</a></p>
-      <p>Ainda não tem uma conta? <a href="#" routerLink="/cadastro">Cadastre-se</a></p>
+<section id="login">
+  <img id="logo" src="../../../assets/audaces-logo.svg" alt="logo" />
+  <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="form-login">
+    <h4>Sign In</h4>
+    <p>Insira suas credenciais para acessar a conta</p>
+    <div class="">
+      <label for="email"></label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        formControlName="email"
+        placeholder="Informe seu e-mail"
+      />
+      <br />
+      <label for="password"></label>
+      <input
+        type="password"
+        id="password"
+        name="senha"
+        formControlName="password"
+        placeholder="Informe sua senha"
+      />
+      <br /><br />
+      <button type="submit">Entrar</button>
     </div>
-  </section>
+  </form>
+  <br />
+  <div class="operacoes">
+    <p>
+      Esqueceu sua senha?
+      <a href="#" routerLink="/esquecisenha">Redefinir senha</a>
+    </p>
+    <p>
+      Ainda não tem uma conta?
+      <a href="#" routerLink="/cadastro">Cadastre-se</a>
+    </p>
+  </div>
+</section>

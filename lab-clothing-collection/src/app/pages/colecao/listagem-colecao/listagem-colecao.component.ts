@@ -8,25 +8,28 @@ import { ModelosService } from 'src/app/services/modelos.service';
 @Component({
   selector: 'app-listagem-colecao',
   templateUrl: './listagem-colecao.component.html',
-  styleUrls: ['./listagem-colecao.component.scss']
+  styleUrls: ['./listagem-colecao.component.scss'],
 })
-export class ListagemColecaoComponent implements OnInit{
-  colecoes: Colecoes [] | undefined = [];
-  modelos: Modelos [] | undefined = [];
+export class ListagemColecaoComponent implements OnInit {
+  colecoes: Colecoes[] | undefined = [];
+  modelos: Modelos[] | undefined = [];
   colecoesModificadas = [];
 
-  constructor ( private ColecoesService: ColecoesService, private ModelosService: ModelosService, private router: Router ) {};
+  constructor(
+    private ColecoesService: ColecoesService,
+    private ModelosService: ModelosService,
+    private router: Router
+  ) {}
 
   async ngOnInit(): Promise<void> {
-    this.colecoes = await this.ColecoesService.getColecoes().toPromise()
+    this.colecoes = await this.ColecoesService.getColecoes().toPromise();
   }
 
   //fetchColecoesModelos() {
-    //const modelosDaColecao = this.modelos.filter(modelo => modelo.colecaoID === colecao[i].id)
-    //const newObj = {
-      //...colecao[id],
-      //qtdModelos: modelosDaColecao.length
-    //}
- // }
-
+  //const modelosDaColecao = this.modelos.filter(modelo => modelo.colecaoID === colecao[i].id)
+  //const newObj = {
+  //...colecao[id],
+  //qtdModelos: modelosDaColecao.length
+  //}
+  // }
 }

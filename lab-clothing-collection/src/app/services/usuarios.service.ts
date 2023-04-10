@@ -4,12 +4,12 @@ import { Usuarios } from '../interfaces/usuarios';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UsuariosService {
-  private baseUrl = 'http://localhost:3000'
+  private baseUrl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getUsuarios(): Observable<Usuarios[]> {
     return this.http.get<Usuarios[]>(`${this.baseUrl}/usuarios`);
@@ -24,11 +24,13 @@ export class UsuariosService {
   }
 
   atualizarUsuario(usuario: Usuarios): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/usuarios/${usuario.id}`, usuario);
+    return this.http.put<any>(
+      `${this.baseUrl}/usuarios/${usuario.id}`,
+      usuario
+    );
   }
 
   excluirUsuario(id: number): Observable<any> {
     return this.http.delete<any>(`${this.baseUrl}/usuarios/${id}`);
   }
-
 }

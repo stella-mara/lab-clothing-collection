@@ -7,39 +7,37 @@ import { UsuariosService } from 'src/app/services/usuarios.service';
 @Component({
   selector: 'app-cadastro-usuario',
   templateUrl: './cadastro-usuario.component.html',
-  styleUrls: ['./cadastro-usuario.component.scss']
+  styleUrls: ['./cadastro-usuario.component.scss'],
 })
 export class CadastroUsuarioComponent implements OnInit {
+  formUsuario!: FormGroup;
+  usuarios: Usuarios[] | undefined = [];
 
-formUsuario!: FormGroup;
-usuarios: Usuarios[] | undefined = [];
+  constructor(
+    private UsuariosService: UsuariosService,
+    private router: Router,
+    private fb: FormBuilder
+  ) {}
 
-constructor (
-  private UsuariosService: UsuariosService,
-  private router: Router,
-  private fb: FormBuilder
-) {}
-
-ngOnInit(): void {
-  this.formUsuario = this.fb.group({
-    nome: ['', [Validators.required]],
-    empresa: ['', [Validators.required]],
-    cnpj: ['', [Validators.required]],
-    email: ['', [Validators.required, Validators.email]],
-    senha: ['', [Validators.required, Validators.minLength(8)]]
-  })
-
-}
+  ngOnInit(): void {
+    this.formUsuario = this.fb.group({
+      nome: ['', [Validators.required]],
+      empresa: ['', [Validators.required]],
+      cnpj: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', [Validators.required, Validators.minLength(8)]],
+    });
+  }
 
   async criarUsuario() {
     if (!this.formUsuario.valid) {
-      alert("Formulario inválido")
+      alert('Formulario inválido');
       return;
-   }
-  const usuario: Usuarios = this.formUsuario.value;
+    }
+    const usuario: Usuarios = this.formUsuario.value;
 
-  await this.UsuariosService.criarUsuario(usuario).toPromise()
+    await this.UsuariosService.criarUsuario(usuario).toPromise();
 
-  this.router.navigateByUrl('/login')
-}
+    this.router.navigateByUrl('/login');
+  }
 }

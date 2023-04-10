@@ -4,14 +4,12 @@ import { Colecoes } from '../interfaces/colecoes';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ColecoesService {
+  private baseUrl = 'http://localhost:3000';
 
-
-  private baseUrl = 'http://localhost:3000'
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getColecoes(): Observable<Colecoes[]> {
     return this.http.get<Colecoes[]>(`${this.baseUrl}/colecoes`);
@@ -26,7 +24,10 @@ export class ColecoesService {
   }
 
   atualizarColecao(colecao: Colecoes): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/colecoes/${colecao.id}`, colecao);
+    return this.http.put<any>(
+      `${this.baseUrl}/colecoes/${colecao.id}`,
+      colecao
+    );
   }
 
   excluirColecao(id: number): Observable<any> {

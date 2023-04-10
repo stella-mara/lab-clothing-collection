@@ -21,16 +21,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let colecao of colecoes" [routerLink]="['/editarcolecao']">
+                <td class="col-md-2">{{ colecao.id }}</td>
+                <td class="col-md-3">{{ colecao.responsavel}}</td>
+                <td class="col-md-4">{{ colecao.estacao }}</td>
                 <td class="col-md-2"></td>
-                <td class="col-md-3"></td>
-                <td class="col-md-4"></td>
-                <td class="col-md-2"></td>
-                <td class="col-md-3"></td>
-              </tr>
-              <tr>
+                <td class="col-md-3">{{ colecao.orcamento }}</td>
+             <!-- </tr>
+              <tr *ngIf="colecoes.length === 0">
                 <td colspan="6">Não foram encontrados mais registros.</td>
-              </tr>
+              </tr> !-->
             </tbody>
         </table>
       </div>

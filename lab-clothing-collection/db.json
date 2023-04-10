@@ -16,7 +16,6 @@
       "senha": "12345678",
       "id": 2
     }
-
   ],
   "modelos": [
     {
@@ -36,7 +35,7 @@
       "responsavel": "João Silva",
       "estacao": "Primavera/Verão",
       "marca": "",
-      "orcamento": "R$ 5000,00",
+      "orcamento": "R$5000,00",
       "lancamento": ""
     },
     {
@@ -44,7 +43,7 @@
       "responsavel": "Stella Mara Wendt",
       "estacao": "Outono/Inverno",
       "marca": "ABC",
-      "orcamento": "2500",
+      "orcamento": "R$2500,00",
       "lancamento": "2023",
       "id": 2
     }

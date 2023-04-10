@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ColecoesService {
 
+
   private baseUrl = 'http://localhost:3000'
 
   constructor(private http: HttpClient) { }

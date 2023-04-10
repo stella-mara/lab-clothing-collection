@@ -1,6 +1,6 @@
 <section class="box-cadastro-colecao">
   <div id="header-colecao" class="d-flex justify-content-start">
-    <h4>Coleção</h4>
+    <h4>Editar Coleção</h4>
   </div>
   <div id="form-cadastro-colecao" class="d-flex justify-content-center">
     <div class="d-flex justify-content-center align-items-center">
@@ -15,7 +15,7 @@
                 class="form-control"
                 id="campo1"
                 required
-                placeholder=""
+                placeholder="Coleção"
               />
             </div>
             <div id="input-colecao" class="form-group mb-4">
@@ -26,7 +26,7 @@
                 class="form-control"
                 id="campo2"
                 required
-                placeholder=""
+                placeholder="Lançamento"
               />
             </div>
             <div id="input-colecao" class="form-group mb-4">
@@ -37,7 +37,7 @@
                 class="form-control"
                 id="campo3"
                 required
-                placeholder=""
+                placeholder="Orçamento"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@
                 class="form-control"
                 id="campo4"
                 required
-                placeholder=""
+                placeholder="Responsável"
               />
             </div>
             <div id="input-colecao" class="form-group mb-4">
@@ -61,7 +61,7 @@
                 class="form-control"
                 id="campo5"
                 required
-                placeholder=""
+                placeholder="Modelos"
               />
             </div>
             <div id="input-colecao" class="form-group mb-4">
@@ -72,7 +72,7 @@
                 class="form-control"
                 id="campo6"
                 required
-                placeholder=""
+                placeholder="Lançamento"
               />
             </div>
           </div>
@@ -80,15 +80,17 @@
         <div  class="img-colecao row justify-content-center">
           <img  id="img-criar-editar" src="../../../../assets/image 1.svg" class="img-fluid m-0" />
       </div>
-    <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-center">        
+      <div id="button-cancelar" class="d-flex justify-content-start">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-danger">
+              Excluir
+            </button>
+          </div>
+      </div>
       <div id="button-colecao" class="d-flex justify-content-between">
         <div class="col-md-4">
-          <button type="button" class="btn btn-secondary disabled">
-            Excluir
-          </button>
-        </div>
-        <div class="col-md-4">
-          <button type="button" class="btn btn-secondary disabled">
+          <button routerLink="/colecao" type="button" class="btn btn-secondary">
             Cancelar
           </button>
         </div>

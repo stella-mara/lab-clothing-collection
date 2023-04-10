@@ -12,7 +12,7 @@
       <div id="lista-modelos-card-body" class="card-body">
         <table id="tabela-modelos" class="table table-hover">
             <thead>
-              <tr>
+              <tr >
                 <th scope="col">ModeloID</th>
                 <th scope="col">Nome do Modelo</th>
                 <th scope="col">Responsável</th>
@@ -20,15 +20,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr > <!--*ngFor = "let modelo of data"-->
-                <td class="col-md-4"></td>
-                <td class="col-md-4"></td>
-                <td class="col-md-4"></td>
-                <td class="col-md-4"></td>
+              <tr [routerLink]="['/editarmodelos']">
+                <td class="col-md-4"><br></td>
+                <td class="col-md-4"><br></td>
+                <td class="col-md-4"><br></td>
+                <td class="col-md-4"><br></td>
 
-              </tr>
-              <tr>
-                <td colspan="4">Não foram encontrados mais registros.</td>
               </tr>
             </tbody>
         </table>
